@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Simmply Perfect Interiors</title>
+  <meta name="description" content="Luxury Interior Design in Hyderabad" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner" aria-label="Primary">
+    <div class="container header-inner">
+      <div class="logo">Simmply Perfect Interiors</div>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="#main">Home</a></li>
+          <li><a href="#gallery">Interiors</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+        <h1 id="hero-heading">Designing Spaces That Feel Simply Perfect</h1>
+        <p class="lead">Luxury interiors for homes, villas &amp; offices</p>
+        <button class="btn gold" id="bookBtn" type="button">Book Consultation</button>
+      </div>
+    </section>
+
+    <section id="gallery" class="gallery section" aria-labelledby="gallery-heading">
+      <div class="container">
+        <h2 id="gallery-heading">Gallery</h2>
+        <div class="gallery-grid" id="galleryGrid" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <section id="services" class="services section" aria-labelledby="services-heading">
+      <div class="container">
+        <h2 id="services-heading">Our Services</h2>
+        <div class="grid">
+          <div class="card">Home Interiors</div>
+          <div class="card">Modular Kitchen</div>
+          <div class="card">Bedroom Design</div>
+          <div class="card">Office Interiors</div>
+          <div class="card">Lighting Design</div>
+          <div class="card">False Ceiling</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials section" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <h2 id="testimonials-heading">Client Reviews</h2>
+        <ul class="reviews">
+          <li>★★★★★ Rahul Sharma — Hyderabad</li>
+          <li>★★★★★ Priya Reddy — Secunderabad</li>
+          <li>★★★★★ Amit Verma — Bangalore</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="contact section" aria-labelledby="contact-heading">
+      <div class="container">
+        <h2 id="contact-heading">Book Free Consultation</h2>
+
+        <form id="contactForm" novalidate>
+          <label class="visually-hidden" for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Name" required>
+
+          <label class="visually-hidden" for="phone">Phone</label>
+          <input id="phone" name="phone" type="tel" placeholder="Phone" inputmode="tel" pattern="[0-9]{10,15}" aria-describedby="phone-help" required>
+          <small id="phone-help" class="visually-hidden">Enter digits only. Include country code if outside India.</small>
+
+          <label class="visually-hidden" for="msg">Message</label>
+          <textarea id="msg" name="msg" placeholder="Message (optional)" rows="4"></textarea>
+
+          <button class="btn gold" type="submit">Submit</button>
+
+          <div id="formStatus" role="status" aria-live="polite" class="form-status" hidden></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="map section" aria-label="Location">
+      <div class="container">
+        <iframe title="Simmply Perfect Interiors location map" src="https://maps.google.com/maps?q=Hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>© 2026 Simmply Perfect Interiors</p>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp shortcut - confirm number before publishing -->
+  <a id="whatsappLink" class="whatsapp" href="https://wa.me/919390719623" target="_blank" rel="noopener noreferrer" aria-label="Open WhatsApp chat">💬</a>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
